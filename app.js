@@ -20,7 +20,7 @@ function getUser(id) {
     }))
 }
 
-// renderUser populates the name and email elements from the provided User object.
+// renderUser populates the name and email elements using data from the provided User object.
 function renderUser(user) {
   const emailElement = document.getElementById('email')
   const nameElement = document.getElementById('name')
