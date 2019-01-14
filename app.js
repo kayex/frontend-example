@@ -14,7 +14,7 @@ function getUser(id) {
     // Decode from JSON
     .then(response => response.json())
 
-    // Marshal JSON into our own User class
+    // Marshal decoded object into our own User class
     .then(json => new Promise((resolve, reject) => {
       resolve(new User(json.email, json.name))
     }))
